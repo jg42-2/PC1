@@ -1,4 +1,4 @@
-package utec.pc1.store;
+package utec.pc1.store.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

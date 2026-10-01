@@ -1,4 +1,4 @@
-package utec.pc1.foodOrder;
+package utec.pc1.foodOrder.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

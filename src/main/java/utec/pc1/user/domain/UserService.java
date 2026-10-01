@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import utec.pc1.exceptions.UnauthorizedException;
 import utec.pc1.exceptions.UserNotFoundException;
-import utec.pc1.user.UserRepository;
+import utec.pc1.user.infrastructure.UserRepository;
 
 @Service
 public class UserService implements UserDetailsService {

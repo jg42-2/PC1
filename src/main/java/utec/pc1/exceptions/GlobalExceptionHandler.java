@@ -5,12 +5,12 @@ import org.springframework.http.ProblemDetail;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 public class GlobalExceptionHandler {
-    @ExceptionHandler({StoreNotFoundException.class, ProductNotFoundException.class})
+    @ExceptionHandler({StoreNotFoundException.class, ProductNotFoundException.class, UserNotFoundException.class})
     public ProblemDetail handleNotFound(RuntimeException ex){
         return build(HttpStatus.NOT_FOUND, "Resource not found", ex.getMessage());
     }
 
-    @ExceptionHandler({InvalidCredentialsException.class})
+    @ExceptionHandler({InvalidCredentialsException.class, UnauthorizedException.class})
     public ProblemDetail handleUnauthorized(RuntimeException ex){
         return build(HttpStatus.UNAUTHORIZED, "Unauthorized.", ex.getMessage());
     }
